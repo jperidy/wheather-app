@@ -7,7 +7,8 @@
 	import { Container, Row } from 'sveltestrap';
 
 	const baseURL = `https://api.openweathermap.org/data/2.5/forecast`;
-	const API_KEY = `1f117e94254efca9fabbfc91b101cf2e`;
+	// const API_KEY = `1f117e94254efca9fabbfc91b101cf2e`;
+	const API_KEY = __myapp.env.API_KEY;
 
 	let city = 'paris';
 	let cityFound = 'paris'
